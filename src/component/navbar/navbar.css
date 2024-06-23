@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,600&display=swap');
+
+:root{
+    --PrimaryColor:hsl(26,93%,50%);
+    --HoverColor:hsl(26,90%,42%);
+    --WhiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyBg:hsl(0,0%,96%);
+    --greyText:hsl(190,190,190);
+    --InputColor:hsl(330,12%,97%);
+    --fonts:'Poppins', sans-serif;
+  
+  }
+
+  .navBarSection .header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index:1000;
+    
+  }
+
+  .header{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    width: 100%;
+    padding: 1rem;
+    z-index:1000;
+  }
+
+  .logodiv .logo{
+    color: var(--WhiteColor);
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo{
+    color: var(--WhiteColor);
+    font-weight: 500;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logodiv .icon{
+    color: var(--PrimaryColor);
+    font-size: 25px;
+  }
+  
+  .icon{
+    
+    color: var(--PrimaryColor);  
+}
+
+.toggleNavbar{
+     display: none;
+}
+
+.closeNavbar{
+    display: none;
+}
+.navItem{
+padding: 2rem;
+  
+}
+
+.navLink{
+    color: white;
+    font-family:var(--fonts);
+}
+
+.btn {
+    font-family:var(--fonts);
+}
+.headerBtns {
+    gap:5px;
+}
+
+
+  @media screen and (max-width:768px) {
+    .navBar{
+        background: var(--greyBg);
+        position: absolute;
+        height: max-content;
+        padding: 1rem;
+        width: 100%;
+        top:0;
+        left:-500%;
+        box-shadow: 0 2px 4px rgba(209,209,209,0.904);
+        transition: .5s ease;
+        z-index: 1000;
+    }
+    .navLists{
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+    }
+
+    .navItem{
+        padding: 1rem 0;
+
+    }
+    .navLink{
+        color: var(--textColor);
+        font-size: .9rem;
+        font-weight: 600;
+
+    }
+    .navLink:hover{
+        color: var(--PrimaryColor);
+    }
+     
+    .headerBtns{
+        flex-direction: column;
+
+    }
+    .headerBtns .btn {
+        margin-top: 1rem;
+    }
+
+    .headerBtns .btn a {
+              font-weight: 600;  
+      }
+    
+      .headerBtns .btn a:hover {
+          color:var(--WhiteColor);
+      }
+    
+       .loginBtn{
+        background: none;
+        border: 1px solid var(--PrimaryColor);
+       }
+     
+       .loginBtn a{
+        color: var(--PrimaryColor);
+       }
+   
+       .loginBtn a:hover{
+        color: var(--WhiteColor);
+        
+       }
+       .headerBtns .loginBtn:hover{
+        background: var(--PrimaryColor);
+       }
+
+        .closeNavbar{
+            position: absolute;
+            top:1rem;
+            right: 1.5rem;
+            color: (--PrimaryColor);
+        }
+        .closeNavbar:hover .icon{
+           color: var(--HoverColor);
+        }
+
+         .activeNavbar{
+            left:0;
+         }
+
+         .toggleNavbar{
+            display: block;
+       }
+       .closeNavbar{
+        display: block;
+       }
+
+
+    }
+
+    .toggleNavbar .icon{
+          font-size: 25px;
+          color:var(--WhiteColor);
+
+    }
+
+    .toggleNavbar .icon:hover{
+        color: var(--PrimaryColor);
+    }
+
+
+

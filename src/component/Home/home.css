@@ -1,0 +1,220 @@
+:root{
+    --PrimaryColor:hsl(26,93%,50%);
+    --HoverColor:hsl(26,90%,42%);
+    --WhiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyBg:hsl(0,0%,96%);
+    --greyText:hsl(190,190,190);
+    --InputColor:hsl(330,12%,97%);
+    --fonts:'Poppins', sans-serif;
+  
+  }
+
+  .home{
+    height: 100vh;
+    background: linear-gradient(rgba(33,33,33,0.522) , rgba(33,33,33,0.522)) , url('../../assets/header__img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;  
+    position: relative; 
+}
+
+.secContainer .homeText{
+  
+    text-align: center;
+}
+
+.title{
+color: var(--WhiteColor);
+font-size: 2rem;
+font-weight: 700;
+line-height: 2.5rem;
+font-family: var(--fonts);
+}
+
+.subTitle{
+     color: var(--WhiteColor);
+     opacity: .9;
+     font-size: 13px;
+     font-weight: 300;
+     padding: 1rem 0;
+     max-width: 70%;
+     text-align: center;
+     margin: auto;
+     font-family: var(--fonts);
+}
+
+.btn {
+    padding: .6rem 1.5rem;
+    width: max-content;
+
+}
+
+.homeCard{
+    width: 80%;
+    border-radius: 1rem;
+    padding: 2rem;
+    background: var(--WhiteColor);
+    position: absolute;
+    gap: 1rem;
+    justify-content: center;
+    display: inline-flex;
+    bottom: -11%;
+    transform: translate(-50%);
+    left:50%;
+    box-shadow: 0 2px 8px 4px rgba(178, 178 , 178,0.45);
+}
+
+
+.locationDiv , .distDiv , .priceDiv{
+    width: 100%;
+  
+
+}
+
+.locationDiv label{
+    display: block;
+    color:var(--textColor);
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: .4rem;
+    background: none;
+}
+
+.distDiv label{
+    display: block;
+    color:var(--textColor);
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: .4rem; 
+}
+
+.priceDiv label{
+    display: block;
+    color:var(--textColor);
+    font-weight: 500;
+    font-size: 15px;
+    padding-bottom: .4rem; 
+}
+
+/* .locationDiv label , .distDiv label , .priceDiv label{
+    display: block;
+    color:var(--textColor);
+    font-weight: 500;
+    font-size: 13px;
+    padding-bottom: .4rem;
+} */
+
+.locationDiv input{
+    width: 100%;
+    background: #bebebef2;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #bebebef2;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.distDiv input{
+    width: 100%;
+    background: #bebebef2;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #bebebef2;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+.priceDiv input{
+    width: 100%;
+    background: #bebebef2;
+    border-radius: 10px;
+    border-radius: 10px;
+    border: 1px solid #bebebef2;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+
+
+
+
+/* .locationDiv input::placeholder{
+    font-size: 13px;
+    opacity: .5;
+    font-weight: 900; 
+    color:black; 
+}
+
+.distDiv input::placeholder{
+    font-size: 13px;
+    opacity: .5;
+    font-weight: 900; 
+    color:black; 
+} */
+
+.priceDiv input::placeholder{
+    font-size: 13px;
+    opacity: .5;
+    font-weight: 500; 
+    color:black; 
+}
+
+
+.locationDiv , .distDiv , .priceDiv input::placeholder{
+   font-size: 13px;
+   /* opacity: .5; */
+   font-weight: 500;
+   background: none;
+  
+}
+
+
+.locationDiv input:focus{
+    outline: #F67009;  
+   
+}
+.distDiv input:focus{
+    outline:#F67009;
+   
+}
+.priceDiv input:focus{
+    outline: #F67009;
+   
+}
+
+/* .locationDiv , .distDiv , .priceDiv input:focus{
+   outline: #F67009 !important;
+   
+} */
+
+ .homeCard .btn{
+    width: 100%;
+    padding: .6rem 1.5rem;
+    color:var(--WhiteColor);
+    font-weight: 600;
+    margin-top: 1.4rem;
+}
+
+/* ::placeholder{
+    color:black;
+    font-size: 15px;
+} */
+
+
+
+@media screen and (max-width:768px) {
+    .homeCard{
+        display: block;
+        bottom: -41%;
+    }
+    
+}

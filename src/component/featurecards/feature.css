@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,600&display=swap');
+
+:root{
+    --PrimaryColor:hsl(26,93%,50%);
+    --HoverColor:hsl(26,90%,42%);
+    --WhiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyBg:hsl(0,0%,96%);
+    --greyText:hsl(190,190,190);
+    --InputColor:hsl(330,12%,97%);
+    --fonts:'Poppins', sans-serif;
+  
+  }
+
+  .feature-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 3rem;
+  }
+  .feature-text h2{
+    font-size: 25px;
+    font-family: 'Poppins';
+  }
+
+  .feature-text p{
+    font-size: 18px;
+    font-family: 'Poppins';
+  }
+  
+
+   .feature-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   }

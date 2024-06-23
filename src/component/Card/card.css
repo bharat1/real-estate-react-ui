@@ -1,0 +1,202 @@
+
+:root{
+    --PrimaryColor:hsl(26,93%,50%);
+    --HoverColor:hsl(26,90%,42%);
+    --WhiteColor:hsl(0,0%,100%);
+    --blackColor:hsl(0,0%,18%);
+    --textColor:hsl(240,1%,48%);
+    --whiteColorDeam:hsl(0,0%,93%);
+    --greyBg:hsl(0,0%,96%);
+    --greyText:hsl(190,190,190);
+    --InputColor:hsl(330,12%,97%);
+    --fonts:'Poppins', sans-serif;
+  
+  }
+
+  .cardContainer{
+    width:1100px;
+    margin:auto;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    gap: 20px;
+    
+    
+  }
+
+   .cardContainer .box{
+    width: 30%;
+      
+      background-color: #eee;
+      position: relative;
+      
+   }
+
+   .cardContainer .box:first-of-type:before{
+    content: "Featured";
+    background-color: #ea723d;
+    color: white;
+    font-size: 13px;
+    padding: 4px 10px;
+    position: absolute;
+    top: 0;
+    left:0;
+    transform: translateY(-50%);
+    z-index: 1;
+
+   }
+
+   .cardContainer .box:first-of-type:after{
+    content: "";
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent transparent #ea723d;
+    position: absolute;
+    left: 70px;
+    top:0;
+    transform: translateY(-50%);
+   }
+
+   /* .cardContainer .box .top{
+    position: relative;
+    background-color: red;
+   } */
+
+   .cardContainer .box .top:before{
+      content: "";
+      width: 100%;
+      height: 54.7%;
+      position: absolute;
+      background-color: rgba(43, 187, 175, 0.829);
+      left: 0;
+      top: 0;
+      transition: 0.3s;
+      opacity: 0;
+
+   }
+
+   .cardContainer .box .top:hover:before{
+      opacity: 1;
+   }
+
+   .cardContainer .box .top:after{
+    content: "View Property";
+    color:white;
+    font-size: 12px;
+    font-family: var(--fonts);
+    border: 1px solid white;
+    position: absolute;
+    padding: 10px;
+    top: 30%;
+    left: 30%;
+    transform: translate(13% , -93%);
+    
+    cursor: pointer;
+    transition: 0.3s;
+    opacity: 0;
+   }
+
+
+.cardContainer .box .top:hover:after{
+      opacity: 1;
+   }
+
+   .cardContainer .box .top img {
+    width: 100%;
+    margin-bottom: -4px;
+   }
+
+   .cardContainer .box .top span{
+    position: absolute;
+    bottom: 48%;
+    right: 5%;
+    font-size: 20px;
+    color: white;
+   }
+   .cardContainer .box .top span >  .heart {
+    margin-left: 5px;
+    margin-bottom: 18px;
+   }
+
+   .cardContainer .box .bottom {
+    padding: 14px 19px;
+    position: relative;
+    width: 100%;
+  }
+
+  .cardContainer .bottom:last-of-type:before 
+   {
+    content: "Hot";
+    background-color: #ea723d;
+    color: black;
+    font-size: 11px;
+    padding: 4px 7px;
+    position: absolute;
+    left: 20px;
+    top: -40px;
+    z-index: 1;
+  }
+  
+  .cardContainer .box .bottom h3 {
+    font-size: 15px;
+  }
+  
+  .cardContainer .box .bottom > p {
+    margin: 0px 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #777;
+  }
+
+  .cardContainer .box .bottom .advants {
+    display: flex;
+  }
+  
+  .cardContainer .box .bottom .advants > div {
+    margin-right: 15px;
+  }
+  
+  .cardContainer .box .bottom .advants > div > span {
+    font-weight: bold;
+    font-size: 12px;
+  }
+  
+  .cardContainer .box .bottom .advants > div > div {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .cardContainer .box .bottom .advants > div > div i {
+    color: #777;
+    font-size: 22px;
+  }
+  
+  .cardContainer .box .bottom .advants > div > div > span {
+    font-size: 12px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+  
+  .cardContainer .box .bottom .advants > div > div > span > span {
+    color: #777;
+    font-weight: normal;
+    margin-left: 5px;
+  }
+
+  .cardContainer .box .bottom .price {
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .cardContainer .box .bottom .price span:first-of-type {
+    display: block;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .cardContainer .box .bottom .price span:last-of-type {
+    color: #3eaba1;
+    font-size: 22px;
+  }

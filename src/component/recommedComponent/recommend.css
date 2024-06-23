@@ -1,0 +1,197 @@
+/* General container styles */
+.feature.section.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recommend h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.recommend p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+
+
+/* General container styles */
+.feature.section.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recommend h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.recommend p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* General container styles */
+.feature.section.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recommend h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.recommend p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* General container styles */
+.feature.section.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sec-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.recommend h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.recommend p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Carousel container */
+.carousel-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Carousel inner container */
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+/* Carousel slide */
+.carousel-slide {
+    display: flex;
+    gap: 1rem; /* Add gap between cards */
+    width: 100%;
+    flex-shrink: 0;
+}
+
+/* Carousel item */
+.carousel-item {
+    flex: 1 0 25%; /* Adjust width to show 4 items per slide */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card img {
+    width: 100%; /* Ensure image fills its container */
+    height: 200px; /* Set a fixed height for all images */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border-bottom: 1px solid #ddd; /* Optional: Add a border below the image */
+}
+
+.carousel-caption {
+    padding: 1rem;
+    text-align: center;
+}
+
+.carousel-caption h3 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    white-space: nowrap; /* Ensure text stays in one line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+}
+
+.carousel-caption p {
+    font-size: 0.875rem;
+    color: #666;
+    white-space: nowrap; /* Ensure text stays in one line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Display ellipsis (...) for overflow text */
+}
+
+/* Buttons */
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+.carousel-button:focus {
+    outline: none;
+}
+
+.carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button svg {
+    font-size: 1.5rem;
+}
+
+
+
+
